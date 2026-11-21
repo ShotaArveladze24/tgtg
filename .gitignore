@@ -19,3 +19,6 @@ pytest_tmp
 out.toml
 out.yaml
 dev.py
+
+taskbot.db
+taskbot/.env

@@ -1,0 +1,11 @@
+services:
+  taskbot:
+    build:
+      context: ..
+      dockerfile: taskbot/Dockerfile
+    env_file: .env
+    volumes:
+      - taskbot-data:/data
+    restart: unless-stopped
+volumes:
+  taskbot-data:
